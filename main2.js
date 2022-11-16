@@ -96,6 +96,21 @@ class Student {
     }
 }
 
+class learningPaths{
+    constructor({
+        nameSchool,
+        courses = [],
+        approvedCourses = [],
+    }){
+        this.nameSchool = nameSchool;
+        this.courses = courses;
+        this.approvedCourses = approvedCourses;
+    }
+};
+
+
+
+//instancias
 const juan2 = new Student({
     name: "JuanDc",
     username: "juandc",
@@ -109,3 +124,4 @@ const miguelito2 = new Student({
     email: "juanito@juanito.com",
     instagram: "miguelitofeliz",
 });
+
